@@ -32,7 +32,7 @@ while( $row = mysql_fetch_array($result))
 	//var_dump( $row1);
 	//die();
 	//mysql_close();
-     echo $row1['name'];
+     //echo $row1['name'];
 	 
   ?></p>
 <a href="edit.php?id=<?php echo $row['id'];?>"> editing news</a> 
