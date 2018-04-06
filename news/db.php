@@ -7,8 +7,6 @@ if(!$connection || !$db)
 	exit(mysql_error());
 }
 else echo "connected";
-  
-
 
  	
-?>
+?></br>
