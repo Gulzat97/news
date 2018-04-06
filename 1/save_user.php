@@ -1,14 +1,3 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title> my site</title>
-</head>
-<body>
-<a href="news/add.php"> Add news</a>
-<a href="news/find.php"> Find news</a>
- 
-<?php>
 <?php
     if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } //заносим введенный пользователем логин в переменную $login, если он пустой, то уничтожаем переменную
     if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
@@ -27,7 +16,7 @@
     $login = trim($login);
     $password = trim($password);
  // подключаемся к базе
-    include ("db.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
+    include ("news/db.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
  // проверка на существование пользователя с таким же логином
     $result = mysql_query("SELECT users_id FROM users WHERE users_login='$login'");
     $myrow = mysql_fetch_array($result);
@@ -51,35 +40,3 @@
     
     }
     ?>
-
-
-
-
-
-
-include_once("news/db.php");
-//$result = mysql_query(" SELECT * FROM news order by id DESC ");
-//$result = mysql_query(" SELECT * FROM news order by id DESC limit 1 ");
-//$result = mysql_query(" SELECT * FROM news WHERE author='Nursultan' order by id DESC ");
-
-$result = mysql_query(" SELECT id,title,text,date,time,author_id FROM news ");
-// mysql_close();
-
-while( $row = mysql_fetch_array($result))
-{ ?>
-<h1><?php echo $row['title']?></h1>
-<p><?php echo $row['text']?></p>
-<p>Date of publicion: <?php echo $row['date']?>/<?php echo $row['time']?></p> 
-<p>Author of news:  
-<?php       $id = $row['author_id'];                          
-    $result1 = mysql_query("  SELECT name FROM author WHERE author_id='$id'    "); 
-	$row1 = mysql_fetch_assoc($result1);
-	 echo $row1['name'];
-	 echo $id ;
-  ?></p>
-<a href="news/edit.php?id=<?php echo $row['id'];?>"> editing news</a> 
-  <hr/> 
-
-<?php }?>
-</body>  
-</html>
