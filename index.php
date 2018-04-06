@@ -14,7 +14,7 @@
 <?php
     include_once("news/db.php");
 	$result2 = mysql_query(" SELECT users_login, users_pass  FROM users  ");
- 
+ echo  "Miraida==============================";
   if(isset($_POST['sign']))
   { 
 	$login = strip_tags(trim($_POST['login']));
@@ -43,7 +43,7 @@
 <a href="news/add.php"> Add news</a>
 <a href="news/find.php"> Find news</a>
 
-<?php>
+<?php
 
 //include_once("news/db.php");
 //$result = mysql_query(" SELECT * FROM news order by id DESC ");
