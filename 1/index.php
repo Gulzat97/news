@@ -26,7 +26,8 @@ while( $row = mysql_fetch_array($result))
 	 echo $id ;
 	//  mysql_close();
   ?></p>
-<a href="news/edit.php?id=<?php echo $row['id'];?>"> editing news</a>
+    <a href="news/edit.php?id=<?php echo $row['id'];?>"> editing news</a>
+    
   <hr/>
 <?php }?>
 </body>

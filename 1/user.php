@@ -58,11 +58,16 @@ while( $row = mysql_fetch_array($result))
     </p>
     <!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** --> 
     <p>
-    <input type="submit" name="submit" value="Sign in">
+    <input type="submit" name="submit1" value="Sign in">
+        <input type="submit" name="submit2" value="Sign up">
     <!--**** Кнопочка (type="submit") отправляет данные на страничку testreg.php ***** --> 
 <br>
- <!--**** ссылка на регистрацию, ведь как-то же должны гости туда попадать ***** --> 
-<a href="reg.php">Sign Up</a> 
+ <!--**** ссылка на регистрацию, ведь как-то же должны гости туда попадать ***** -->
+
+
+
+
+            <a href="reg.php">Sign Up</a>
     </p></form>
     <br>
     <?php
