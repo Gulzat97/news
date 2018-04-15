@@ -1,13 +1,9 @@
 <?php
 include_once("news/db.php");
-if(isset($_POST['submit2']))
-{
-    include("save_user.php");
 
-}
 if(isset($_POST['submit1']))
 {
-session_start();
+//session_start();
 //  вся процедура работает на сессиях. Именно в ней хранятся данные  пользователя, пока он находится на сайте. Очень важно запустить их в  самом начале странички!!!
 if (isset($_POST['login'])) {
     $login = $_POST['login'];
@@ -59,11 +55,16 @@ echo
 <?php echo "You can add or edit your news! "; ?> </br></br>
 <?php
 include("add.php");
-
 }
 else {
     //если пароли не сошлись
     exit ("Sorry, the login or password you entered is incorrect");
 }
 }
-} ?>
+}
+
+if(isset($_POST['submit2']))
+{
+    include("save_user.php");
+}
+?>

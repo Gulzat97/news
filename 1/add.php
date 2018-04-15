@@ -47,5 +47,13 @@ if(isset($_POST['add']))
     echo "The news was succesfully added.";
 }
 ?>
+   <form action = 'send.php' method='POST' enctype="multipart/form-data" >
+       Send this file: <input name="filename" type="file" /> </br>
+       </br> URL: <input name="url1" type="text" />  </br>
+       </br> Description: <input name="text" type="text" /> </br>
+       </br> <input type = 'submit' value = "send file"/> </br>
+    <input type="hidden" name="date" value="<?php echo date("Y-m-d"); ?>" />
+
+    </form>
 </body>
 </html>

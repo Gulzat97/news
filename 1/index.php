@@ -5,6 +5,9 @@
   <title> my site</title>
 </head>
 <body>
+
+<a href="img.php"> image </a>  </br>
+
 <label>if you want to add new news:</label>
 <a href="user.php"> click heres</a></br>
 <?php //<a href="news/add.php"> Add news</a> ?>

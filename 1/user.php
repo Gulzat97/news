@@ -63,11 +63,7 @@ while( $row = mysql_fetch_array($result))
     <!--**** Кнопочка (type="submit") отправляет данные на страничку testreg.php ***** --> 
 <br>
  <!--**** ссылка на регистрацию, ведь как-то же должны гости туда попадать ***** -->
-
-
-
-
-            <a href="reg.php">Sign Up</a>
+        <? //<a href="reg.php">Sign Up</a>  ?>
     </p></form>
     <br>
     <?php
