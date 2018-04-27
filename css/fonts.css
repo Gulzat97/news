@@ -1,0 +1,80 @@
+/* ICONS */
+@font-face {
+  font-family: 'chevron';
+  src: url('/fonts/chevron.eot?72624250');
+  src: url('/fonts/chevron.eot?72624250#iefix') format('embedded-opentype'),
+       url('/fonts/chevron.woff2?72624250') format('woff2'),
+       url('/fonts/chevron.woff?72624250') format('woff'),
+       url('/fonts/chevron.ttf?72624250') format('truetype'),
+       url('/fonts/chevron.svg?72624250#chevron') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "chevron";
+    font-style: normal;
+    font-weight: normal;
+    display: block;
+}
+ 
+.icon-left-open:before { content: '\e800'; }
+.icon-right-open:before { content: '\e801'; }
+.icon-angle-left:before { content: '\f104'; padding: 0 12px 0 10px;} 
+.icon-angle-right:before { content: '\f105'; padding: 0 10px 0 12px;}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* TEXT */
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/PT_Sans-Web-Regular.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/Lobster-Regular.ttf);
+}
+/* @font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RalewaySemiBold';
+  src: url('/fonts/Raleway-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('/fonts/RobotoSlab-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Accuratist';
+  src: url('/fonts/Accuratist.ttf'),
+       url('/fonts/Accuratist.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+
