@@ -1,0 +1,67 @@
+.admin-header {
+	color: #fff;
+}
+.admin-header span {
+	border-bottom: 1px dashed #fff;
+}
+.admin-header a {
+	color: #fff;
+	padding: 0 10px;
+}
+
+.admin-header a:hover {
+	color: #fbc531;
+}
+
+.admin-bar {
+}
+
+.admin-bar .fa {
+	font-size: 22px;
+	margin: 0 0 10px 0;
+	display: block;
+	text-align: center;
+	border: 2px solid #ccc;
+	padding: 6px;
+	border-radius: 5px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.admin-bar .fa:hover {
+	
+}
+
+.admin-bar .admin-delete:hover {
+	color: #ff3838;
+	border: 2px solid #ff3838;
+}
+
+.admin-bar .admin-edit:hover {
+	color: #fbc531;
+	border: 2px solid #fbc531;
+}
+
+
+.add-new-post {
+	text-align: center;
+	display: block;
+	padding: 12.5px 0;
+	margin: 50px 20px 0;
+	color: #666;
+	border: 2px dashed #666;
+	opacity: 0.9;
+}
+
+.add-new-post .fa-plus-circle {
+	font-size: 40px;
+}
+
+.add-new-post:hover {
+	border: 2px dashed #009432;
+}
+
+.add-new-post:hover .fa-plus-circle {
+	color: #009432;
+}
+
